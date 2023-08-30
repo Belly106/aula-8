@@ -1,0 +1,79 @@
+/*
+//Strings e Arrays
+//tipos de STRINGS
+let nome = prompt ( "escreva seu nome:");
+let cor = prompt("escreva sua cor favorita:");
+console.log('A cor favorita de '  + nome +  ' é '  + cor);
+console.log(`A cor favorita de ${nome} é ${cor}`); //uso de crase pois versão de JS é antiga.
+
+//Arrays
+const nomeA = "Vitor Hugo";
+console.log(nomeA.length);
+
+const frase = "OieEee!";
+const fraseMinuscula = frase.toLowerCase (); //transforma tudo para mínusculo.
+const fraseMaiuscula = frase.toUpperCase (); //transforma tudo para maiuscula.
+
+//trim() tira os espaços extras.
+const email = "  mika@gmail.com  ";
+console.log(email.trim());
+
+//includes determina se um conjunto de caracteres pode ser encontrado dentro de outra string, retornando true or false.
+const fraseA = "hoje comi cenoura";
+frase.includes("cenoura"); //true
+frase.includes("batatas"); //false
+
+//método replaceAll("chars1" , "chars2") troca todas as caracteres x por uma y.
+const novaFrase = fraseA.replaceAll("cenoura" , "batata"); 
+
+
+//exercicio
+let frase = prompt ("Escreva uma frase:");
+console.log(frase.length);
+console.log(frase.replaceAll("o" , "i"));
+console.log(frase.toUpperCase());
+
+//ARRAYS: são listas de elementos. Ex: lista de compras, lista de alunos, lista de números da loteria...
+//usamos []
+//array sempre começa no 0.
+const listaDeCompras = ["batata", "alface", "queijo"];
+const listaDeNumeros = [2, 13, 26, 35, 41, 60];
+const meuArray = ["banana", 15, true];
+const segundoItem = listaDeCompras[2];//queijo
+
+//exercício 3.
+const racasCachorros = ["yorkshare", "bulldog", "shitzu", "lulu da paumeranea", "pastor alemão"];
+item = prompt("Escolha um número de 0 a 4:");
+console.log(racasCachorros[item]);
+
+
+//sobre o LENGTH: diz a quantidade de itens de um array.
+//const pokemon = ["bulbasauro", "squirtle", "charmender"];
+//console.log(pokemon.length); - 3
+
+//includes: determina se um array contém um determinado elemento, retornando true or false.
+const seriesBoas = ["ex1", "ex2", "ex3"];
+seriesBoas.includes("ex1");//true
+seriesBoas.incluides("ex4");//false
+
+//PUSH: adiciona um ou mais elementos ao final de um array.
+const numeros = [1, 2, 3]
+numeros.push(4);
+console.log(numeros);
+numeros.push(4, 5, 6, 7);
+console.log(numeros);
+
+//POP´: remove o último elemento do array.
+const meusPeixes = ["palhaço", "mandarim", "esturjão"];
+meusPeixes.pop();
+console.log(meusPeixes);
+
+//SPLICE(i,n): 
+i= indices (posição do array[0, 1, 2, 3..])
+n= elementos do array
+o método splice(i,n) remove n elementos a partir da posição i do array.
+const letras = ["A", "B", "C", "D", "E", "F", "G", "H",];
+letras.splice(2, 1);
+letras.splice(3,2);
+
+*/
